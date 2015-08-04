@@ -1,0 +1,23 @@
+objects/TAppDecCfg.d.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/App/TAppDecoder/TAppDecCfg.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/App/TAppDecoder/TAppDecCfg.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TAppCommon/program_options_lite.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComChromaFormat.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComRectangle.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/ContextTables.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/Debug.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/App/TAppDecoder/TAppDecCfg.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/App/TAppDecoder/TAppDecCfg.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TAppCommon/program_options_lite.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComChromaFormat.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComRectangle.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/ContextTables.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoderAnalyser/../../../../source/Lib/TLibCommon/Debug.h :

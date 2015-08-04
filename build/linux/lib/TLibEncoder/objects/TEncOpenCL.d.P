@@ -1,0 +1,17 @@
+objects/TEncOpenCL.d.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncOpenCL.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncOpenCL.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComMv.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/CL/cl.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/CL/cl_platform.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncOpenCL.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncOpenCL.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComMv.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/CL/cl.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/CL/cl_platform.h :

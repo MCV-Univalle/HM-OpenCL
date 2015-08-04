@@ -1,0 +1,15 @@
+objects/NALwrite.r.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :

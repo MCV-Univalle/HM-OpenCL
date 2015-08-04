@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="source">
+        <df name="App">
+          <df name="TAppDecoder">
+            <in>TAppDecCfg.cpp</in>
+            <in>TAppDecTop.cpp</in>
+            <in>decmain.cpp</in>
+          </df>
+          <df name="TAppEncoder">
+            <in>TAppEncCfg.cpp</in>
+            <in>TAppEncTop.cpp</in>
+            <in>encmain.cpp</in>
+          </df>
+          <df name="utils">
+            <in>annexBbytecount.cpp</in>
+            <in>convert_NtoMbit_YCbCr.cpp</in>
+          </df>
+        </df>
+        <df name="Lib">
+          <df name="libmd5">
+            <in>libmd5.c</in>
+          </df>
+          <df name="TAppCommon">
+            <in>program_options_lite.cpp</in>
+          </df>
+          <df name="TLibCommon">
+            <in>ContextModel.cpp</in>
+            <in>ContextModel3DBuffer.cpp</in>
+            <in>Debug.cpp</in>
+            <in>SEI.cpp</in>
+            <in>TComBitStream.cpp</in>
+            <in>TComCABACTables.cpp</in>
+            <in>TComChromaFormat.cpp</in>
+            <in>TComDataCU.cpp</in>
+            <in>TComInterpolationFilter.cpp</in>
+            <in>TComLoopFilter.cpp</in>
+            <in>TComMotionInfo.cpp</in>
+            <in>TComPattern.cpp</in>
+            <in>TComPic.cpp</in>
+            <in>TComPicSym.cpp</in>
+            <in>TComPicYuv.cpp</in>
+            <in>TComPicYuvMD5.cpp</in>
+            <in>TComPrediction.cpp</in>
+            <in>TComRdCost.cpp</in>
+            <in>TComRdCostWeightPrediction.cpp</in>
+            <in>TComRom.cpp</in>
+            <in>TComSampleAdaptiveOffset.cpp</in>
+            <in>TComSlice.cpp</in>
+            <in>TComTU.cpp</in>
+            <in>TComTrQuant.cpp</in>
+            <in>TComWeightPrediction.cpp</in>
+            <in>TComYuv.cpp</in>
+          </df>
+          <df name="TLibDecoder">
+            <in>AnnexBread.cpp</in>
+            <in>NALread.cpp</in>
+            <in>SEIread.cpp</in>
+            <in>SyntaxElementParser.cpp</in>
+            <in>TDecBinCoderCABAC.cpp</in>
+            <in>TDecCAVLC.cpp</in>
+            <in>TDecCu.cpp</in>
+            <in>TDecEntropy.cpp</in>
+            <in>TDecGop.cpp</in>
+            <in>TDecSbac.cpp</in>
+            <in>TDecSlice.cpp</in>
+            <in>TDecTop.cpp</in>
+          </df>
+          <df name="TLibEncoder">
+            <in>NALwrite.cpp</in>
+            <in>SEIEncoder.cpp</in>
+            <in>SEIwrite.cpp</in>
+            <in>SyntaxElementWriter.cpp</in>
+            <in>TEncBinCoderCABAC.cpp</in>
+            <in>TEncBinCoderCABACCounter.cpp</in>
+            <in>TEncCavlc.cpp</in>
+            <in>TEncCu.cpp</in>
+            <in>TEncEntropy.cpp</in>
+            <in>TEncGOP.cpp</in>
+            <in>TEncOpenCL.cpp</in>
+            <in>TEncPic.cpp</in>
+            <in>TEncPreanalyzer.cpp</in>
+            <in>TEncRateCtrl.cpp</in>
+            <in>TEncSampleAdaptiveOffset.cpp</in>
+            <in>TEncSbac.cpp</in>
+            <in>TEncSearch.cpp</in>
+            <in>TEncSlice.cpp</in>
+            <in>TEncTop.cpp</in>
+            <in>WeightPredAnalysis.cpp</in>
+          </df>
+          <df name="TLibVideoIO">
+            <in>TVideoIOYuv.cpp</in>
+          </df>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>build/linux/makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>build/linux/makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-fPIC"/>
+        <element flagsID="1" commonFlags="-fPIC -g"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>build/linux</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath>bin/TAppEncoderStatic</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>source/Lib</pElem>
+              <pElem>source/Lib/TLibCommon</pElem>
+              <pElem>build/linux/lib/TLibCommon</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>MSYS_LINUX</Elem>
+              <Elem>_DEBUG</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>source/Lib</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>MSYS_LINUX</Elem>
+              <Elem>_DEBUG</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <folder path="0/source/App">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/source/App/TAppDecoder">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/TAppDecoder</pElem>
+            <pElem>build/linux/app/TAppDecoderAnalyser</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_BIT_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/source/App/TAppEncoder">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/TAppEncoder</pElem>
+            <pElem>build/linux/app/TAppEncoder</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/source/App/utils">
+        <ccTool>
+          <incDir>
+            <pElem>source/App/utils</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/source/Lib/TAppCommon">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/TAppCommon</pElem>
+            <pElem>build/linux/lib/TAppCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/source/Lib/TLibCommon">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/TLibCommon</pElem>
+            <pElem>build/linux/lib/TLibCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/source/Lib/TLibDecoder">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/TLibDecoder</pElem>
+            <pElem>build/linux/lib/TLibDecoderAnalyser</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>RExt__DECODER_DEBUG_BIT_STATISTICS=1</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="0/source/Lib/TLibEncoder">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/TLibEncoder</pElem>
+            <pElem>build/linux/lib/TLibEncoder</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/source/Lib/TLibVideoIO">
+        <ccTool>
+          <incDir>
+            <pElem>source/Lib/TLibVideoIO</pElem>
+            <pElem>build/linux/lib/TLibVideoIO</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <item path="source/App/TAppDecoder/TAppDecCfg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/TAppDecoder/TAppDecTop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/TAppDecoder/decmain.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/TAppEncoder/TAppEncCfg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/TAppEncoder/TAppEncTop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/TAppEncoder/encmain.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/App/utils/annexBbytecount.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>build/linux/utils/annexBbytecount</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="source/App/utils/convert_NtoMbit_YCbCr.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>build/linux/utils/convert_NtoMbit_YCbCr</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="source/Lib/TAppCommon/program_options_lite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/ContextModel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/ContextModel3DBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/Debug.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/SEI.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComBitStream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComCABACTables.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComChromaFormat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComDataCU.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComInterpolationFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComLoopFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComMotionInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPattern.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPic.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPicSym.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPicYuv.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPicYuvMD5.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComRdCost.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComRom.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComSlice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComTU.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComTrQuant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComWeightPrediction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibCommon/TComYuv.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/AnnexBread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/NALread.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/SEIread.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/SyntaxElementParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecCAVLC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecCu.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecEntropy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecGop.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecSbac.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecSlice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibDecoder/TDecTop.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/NALwrite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/SEIEncoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/SEIwrite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/SyntaxElementWriter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncCavlc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncCu.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncEntropy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncGOP.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncOpenCL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncPic.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncPreanalyzer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncRateCtrl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncSbac.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncSearch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncSlice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/TEncTop.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibEncoder/WeightPredAnalysis.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/TLibVideoIO/TVideoIOYuv.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="source/Lib/libmd5/libmd5.c" ex="false" tool="0" flavor2="2">
+        <cTool flags="1">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

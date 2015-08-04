@@ -1,0 +1,23 @@
+objects/TAppDecCfg.r.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComChromaFormat.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRectangle.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/ContextTables.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/Debug.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComChromaFormat.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRectangle.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/ContextTables.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/Debug.h :

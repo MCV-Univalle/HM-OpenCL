@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="bin">
+      </df>
+      <df name="build">
+        <df name="linux">
+          <df name="app">
+            <df name="TAppDecoder">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TAppDecoderAnalyser">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TAppEncoder">
+              <df name="objects">
+              </df>
+            </df>
+          </df>
+          <df name="common">
+          </df>
+          <df name="lib">
+            <df name="TAppCommon">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TLibCommon">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TLibDecoder">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TLibDecoderAnalyser">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TLibEncoder">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="TLibVideoIO">
+              <df name="objects">
+              </df>
+            </df>
+          </df>
+          <df name="utils">
+            <df name="annexBbytecount">
+              <df name="objects">
+              </df>
+            </df>
+            <df name="convert_NtoMbit_YCbCr">
+              <df name="objects">
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="vc10">
+        </df>
+        <df name="vc8">
+        </df>
+        <df name="vc9">
+        </df>
+      </df>
+      <df name="cfg">
+        <df name="misc">
+        </df>
+        <df name="per-sequence">
+        </df>
+      </df>
+      <df name="compat">
+        <df name="msvc">
+          <in>stdint.h</in>
+        </df>
+      </df>
+      <df name="doc">
+        <in>mainpage.h</in>
+      </df>
+      <df name="HM.xcodeproj">
+      </df>
+      <df name="lib">
+      </df>
+      <df name="source">
+        <df name="App">
+          <df name="TAppDecoder">
+            <in>TAppDecCfg.cpp</in>
+            <in>TAppDecCfg.h</in>
+            <in>TAppDecTop.cpp</in>
+            <in>TAppDecTop.h</in>
+            <in>decmain.cpp</in>
+          </df>
+          <df name="TAppEncoder">
+            <in>TAppEncCfg.cpp</in>
+            <in>TAppEncCfg.h</in>
+            <in>TAppEncTop.cpp</in>
+            <in>TAppEncTop.h</in>
+            <in>encmain.cpp</in>
+          </df>
+          <df name="utils">
+            <df name="BitrateTargeting">
+              <in>ExtractBitrates.cpp</in>
+              <in>ExtractBitrates.h</in>
+              <in>ExtractBitratesMain.cpp</in>
+              <in>GuessLambdaModifiers.cpp</in>
+              <in>GuessLambdaModifiers.h</in>
+              <in>GuessLambdaModifiersMain.cpp</in>
+              <in>RuntimeError.h</in>
+            </df>
+            <in>annexBbytecount.cpp</in>
+            <in>convert_NtoMbit_YCbCr.cpp</in>
+          </df>
+        </df>
+        <df name="Lib">
+          <df name="CL">
+            <in>cl.h</in>
+            <in>cl.hpp</in>
+            <in>cl_d3d10.h</in>
+            <in>cl_d3d11.h</in>
+            <in>cl_dx9_media_sharing.h</in>
+            <in>cl_ext.h</in>
+            <in>cl_gl.h</in>
+            <in>cl_gl_ext.h</in>
+            <in>cl_platform.h</in>
+            <in>opencl.h</in>
+          </df>
+          <df name="libmd5">
+            <in>MD5.h</in>
+            <in>libmd5.c</in>
+            <in>libmd5.h</in>
+          </df>
+          <df name="TAppCommon">
+            <in>program_options_lite.cpp</in>
+            <in>program_options_lite.h</in>
+          </df>
+          <df name="TLibCommon">
+            <in>AccessUnit.h</in>
+            <in>CommonDef.h</in>
+            <in>ContextModel.cpp</in>
+            <in>ContextModel.h</in>
+            <in>ContextModel3DBuffer.cpp</in>
+            <in>ContextModel3DBuffer.h</in>
+            <in>ContextTables.h</in>
+            <in>Debug.cpp</in>
+            <in>Debug.h</in>
+            <in>NAL.h</in>
+            <in>SEI.cpp</in>
+            <in>SEI.h</in>
+            <in>TComBitCounter.h</in>
+            <in>TComBitStream.cpp</in>
+            <in>TComBitStream.h</in>
+            <in>TComCABACTables.cpp</in>
+            <in>TComCABACTables.h</in>
+            <in>TComChromaFormat.cpp</in>
+            <in>TComChromaFormat.h</in>
+            <in>TComCodingStatistics.h</in>
+            <in>TComDataCU.cpp</in>
+            <in>TComDataCU.h</in>
+            <in>TComInterpolationFilter.cpp</in>
+            <in>TComInterpolationFilter.h</in>
+            <in>TComList.h</in>
+            <in>TComLoopFilter.cpp</in>
+            <in>TComLoopFilter.h</in>
+            <in>TComMotionInfo.cpp</in>
+            <in>TComMotionInfo.h</in>
+            <in>TComMv.h</in>
+            <in>TComPattern.cpp</in>
+            <in>TComPattern.h</in>
+            <in>TComPic.cpp</in>
+            <in>TComPic.h</in>
+            <in>TComPicSym.cpp</in>
+            <in>TComPicSym.h</in>
+            <in>TComPicYuv.cpp</in>
+            <in>TComPicYuv.h</in>
+            <in>TComPicYuvMD5.cpp</in>
+            <in>TComPrediction.cpp</in>
+            <in>TComPrediction.h</in>
+            <in>TComRdCost.cpp</in>
+            <in>TComRdCost.h</in>
+            <in>TComRdCostWeightPrediction.cpp</in>
+            <in>TComRdCostWeightPrediction.h</in>
+            <in>TComRectangle.h</in>
+            <in>TComRom.cpp</in>
+            <in>TComRom.h</in>
+            <in>TComSampleAdaptiveOffset.cpp</in>
+            <in>TComSampleAdaptiveOffset.h</in>
+            <in>TComSlice.cpp</in>
+            <in>TComSlice.h</in>
+            <in>TComTU.cpp</in>
+            <in>TComTU.h</in>
+            <in>TComTrQuant.cpp</in>
+            <in>TComTrQuant.h</in>
+            <in>TComWeightPrediction.cpp</in>
+            <in>TComWeightPrediction.h</in>
+            <in>TComYuv.cpp</in>
+            <in>TComYuv.h</in>
+            <in>TypeDef.h</in>
+          </df>
+          <df name="TLibDecoder">
+            <in>AnnexBread.cpp</in>
+            <in>AnnexBread.h</in>
+            <in>NALread.cpp</in>
+            <in>NALread.h</in>
+            <in>SEIread.cpp</in>
+            <in>SEIread.h</in>
+            <in>SyntaxElementParser.cpp</in>
+            <in>SyntaxElementParser.h</in>
+            <in>TDecBinCoder.h</in>
+            <in>TDecBinCoderCABAC.cpp</in>
+            <in>TDecBinCoderCABAC.h</in>
+            <in>TDecCAVLC.cpp</in>
+            <in>TDecCAVLC.h</in>
+            <in>TDecCu.cpp</in>
+            <in>TDecCu.h</in>
+            <in>TDecEntropy.cpp</in>
+            <in>TDecEntropy.h</in>
+            <in>TDecGop.cpp</in>
+            <in>TDecGop.h</in>
+            <in>TDecSbac.cpp</in>
+            <in>TDecSbac.h</in>
+            <in>TDecSlice.cpp</in>
+            <in>TDecSlice.h</in>
+            <in>TDecTop.cpp</in>
+            <in>TDecTop.h</in>
+          </df>
+          <df name="TLibEncoder">
+            <in>AnnexBwrite.h</in>
+            <in>NALwrite.cpp</in>
+            <in>NALwrite.h</in>
+            <in>SEIEncoder.cpp</in>
+            <in>SEIEncoder.h</in>
+            <in>SEIwrite.cpp</in>
+            <in>SEIwrite.h</in>
+            <in>SyntaxElementWriter.cpp</in>
+            <in>SyntaxElementWriter.h</in>
+            <in>TEncAnalyze.h</in>
+            <in>TEncBinCoder.h</in>
+            <in>TEncBinCoderCABAC.cpp</in>
+            <in>TEncBinCoderCABAC.h</in>
+            <in>TEncBinCoderCABACCounter.cpp</in>
+            <in>TEncBinCoderCABACCounter.h</in>
+            <in>TEncCavlc.cpp</in>
+            <in>TEncCavlc.h</in>
+            <in>TEncCfg.h</in>
+            <in>TEncCu.cpp</in>
+            <in>TEncCu.h</in>
+            <in>TEncEntropy.cpp</in>
+            <in>TEncEntropy.h</in>
+            <in>TEncGOP.cpp</in>
+            <in>TEncGOP.h</in>
+            <in>TEncOpenCL.cpp</in>
+            <in>TEncOpenCL.h</in>
+            <in>TEncPic.cpp</in>
+            <in>TEncPic.h</in>
+            <in>TEncPreanalyzer.cpp</in>
+            <in>TEncPreanalyzer.h</in>
+            <in>TEncRateCtrl.cpp</in>
+            <in>TEncRateCtrl.h</in>
+            <in>TEncSampleAdaptiveOffset.cpp</in>
+            <in>TEncSampleAdaptiveOffset.h</in>
+            <in>TEncSbac.cpp</in>
+            <in>TEncSbac.h</in>
+            <in>TEncSearch.cpp</in>
+            <in>TEncSearch.h</in>
+            <in>TEncSlice.cpp</in>
+            <in>TEncSlice.h</in>
+            <in>TEncTop.cpp</in>
+            <in>TEncTop.h</in>
+            <in>WeightPredAnalysis.cpp</in>
+            <in>WeightPredAnalysis.h</in>
+          </df>
+          <df name="TLibVideoIO">
+            <in>TVideoIOYuv.cpp</in>
+            <in>TVideoIOYuv.h</in>
+          </df>
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>build/linux/makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM/cfg/per-sequence/BQMall.cfg</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall.cfg</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall.cfg</runcommand>
+        <rundir>build/linux</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

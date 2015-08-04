@@ -1,0 +1,15 @@
+objects/NALread.r.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/NALread.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/NALread.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/NAL.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/NALread.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/NALread.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibCommon/NAL.h :

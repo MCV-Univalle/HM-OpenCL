@@ -1,0 +1,5 @@
+objects/program_options_lite.d.o: \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp \
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.h
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.cpp :
+ /home/augusto/Copy/NetBeansProjects/HM-OpenCL/build/linux/lib/TAppCommon/../../../../source/Lib/TAppCommon/program_options_lite.h :
