@@ -3073,7 +3073,7 @@ Void TEncSearch::predInterSearch( TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv* 
             if(m_pcEncCfg->getOpenCL())
             {
                 if( pcCU->getWidth(0) == 64 && pcCU->getWidth(0) == 64 && ePartSize == SIZE_2Nx2N )
-                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvZero, iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
+                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
                 
                 cMvTemp[iRefList][iRefIdxTemp] = allMotionVectors[iRefList][iRefIdxTemp][indexBlock];
                 uiCostTemp =  allRuiCost[iRefList][iRefIdxTemp][indexBlock];
@@ -3090,7 +3090,7 @@ Void TEncSearch::predInterSearch( TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv* 
             if(m_pcEncCfg->getOpenCL())
             {
                 if( pcCU->getWidth(0) == 64 && pcCU->getWidth(0) == 64 && ePartSize == SIZE_2Nx2N )
-                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvZero, iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
+                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
                 
                 cMvTemp[iRefList][iRefIdxTemp] = allMotionVectors[iRefList][iRefIdxTemp][indexBlock];
                 uiCostTemp =  allRuiCost[iRefList][iRefIdxTemp][indexBlock];
@@ -3104,7 +3104,7 @@ Void TEncSearch::predInterSearch( TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv* 
         if(m_pcEncCfg->getOpenCL())
         {
             if( pcCU->getWidth(0) == 64 && pcCU->getWidth(0) == 64 && ePartSize == SIZE_2Nx2N )
-                xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvZero, iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
+                xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
                 
             cMvTemp[iRefList][iRefIdxTemp] = allMotionVectors[iRefList][iRefIdxTemp][indexBlock];
             uiCostTemp =  allRuiCost[iRefList][iRefIdxTemp][indexBlock];
@@ -3264,7 +3264,7 @@ Void TEncSearch::predInterSearch( TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv* 
           if(m_pcEncCfg->getOpenCL())
           {
             if( pcCU->getWidth(0) == 64 && pcCU->getWidth(0) == 64 && ePartSize == SIZE_2Nx2N )
-                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvZero, iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
+                    xMotionEstimationOpenCL(pcCU, pcOrgYuv, 0, eRefPicList, &cMvPredBi[iRefList][iRefIdxTemp], iRefIdxTemp, iRefList, allMotionVectors, allRuiCost);
                 
             cMvTemp[iRefList][iRefIdxTemp] = allMotionVectors[iRefList][iRefIdxTemp][indexBlock];
             uiCostTemp =  allRuiCost[iRefList][iRefIdxTemp][indexBlock];
@@ -3881,8 +3881,8 @@ Void TEncSearch::xPatternSearch( TComPattern* pcPatternKey, Pel* piRefY, Int iRe
 
   piRefY += (iSrchRngVerTop * iRefStride);
   
-  if(m_cDistParam.iCols == 64 && m_cDistParam.iRows == 64)
-    printf("pel[%dx%d]: %d\n", m_cDistParam.iCols, m_cDistParam.iRows, *(piRefY + iSrchRngHorLeft));
+ // if(m_cDistParam.iCols == 64 && m_cDistParam.iRows == 64)
+   // printf("pel[%dx%d]: %d\n", m_cDistParam.iCols, m_cDistParam.iRows, *(piRefY + iSrchRngHorLeft));
   
   for ( Int y = iSrchRngVerTop; y <= iSrchRngVerBottom; y++ )
   {

@@ -1116,7 +1116,7 @@ Void  TEncCfg::xCheckGSParameters()
 Void TEncTop::xInitOpenCL(Int OpenCLDevice)
 
 {
-    const Char* file = "/home/augusto/sad.cl" ;
+    const Char* file = "/home/augusto/Copy/NetBeansProjects/HM-OpenCL/cl/sad.cl" ;
     const Char* kernelCalc; 
 
 #if AMP_ENC_SPEEDUP

@@ -72,6 +72,8 @@
         <df name="per-sequence">
         </df>
       </df>
+      <df name="cl">
+      </df>
       <df name="compat">
         <df name="msvc">
           <in>stdint.h</in>
