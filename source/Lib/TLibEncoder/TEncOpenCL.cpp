@@ -359,7 +359,7 @@ Void TEncOpenCL::calcMotionVectors(Pel* pelCtu, Pel* pelSearch, Int i_iRefStride
     errNum = clEnqueueUnmapMemObject(queue, YarrayBuffer, Yarray, 0, NULL, NULL);
     checkError(errNum, "clEnqueueUnmapMemObject - YarrayBuffer");
     
-   /* for(Int i = 0; i< NUM_CTU_PARTS; i++)
+    /*for(Int i = 0; i< NUM_CTU_PARTS; i++)
         printf("Sad[%d]: %d - x: %d - y:%d\n", i, ruiCosts[i], Xarray[i], Yarray[i]);
     
     std::cout << "Press enter to continue ..."; 

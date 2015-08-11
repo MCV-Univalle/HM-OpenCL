@@ -168,6 +168,8 @@ protected:
   Int           xGetDistScaleFactor   ( Int iCurrPOC, Int iCurrRefPOC, Int iColPOC, Int iColRefPOC );
 
   Void xDeriveCenterIdx( UInt uiPartIdx, UInt& ruiPartIdxCenter );
+  
+  
 
 public:
   TComDataCU();
@@ -195,6 +197,9 @@ public:
 
   Void          copyToPic             ( UChar uiDepth );
 
+  /// get index OpenCL
+  Int  getIndexBlock(Int iPartIdx);
+  
   // -------------------------------------------------------------------------------------------------------------------
   // member functions for CU description
   // -------------------------------------------------------------------------------------------------------------------

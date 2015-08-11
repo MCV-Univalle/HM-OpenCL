@@ -229,8 +229,7 @@ Void TEncCu::init( TEncTop* pcEncTop )
  */
 Void TEncCu::compressCtu( TComDataCU* pCtu )
 { 
-    if(!pCtu->getSlice()->isIntra())
-        printf("compress CTU\n");
+    
   // initialize CU data
   m_ppcBestCU[0]->initCtu( pCtu->getPic(), pCtu->getCtuRsAddr() );
   m_ppcTempCU[0]->initCtu( pCtu->getPic(), pCtu->getCtuRsAddr() );

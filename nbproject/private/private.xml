@@ -10,14 +10,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibCommon/TypeDef.h</file>
-            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncCu.cpp</file>
-            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibCommon/TComRdCost.cpp</file>
             <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncSearch.h</file>
-            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncCu.h</file>
+            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncOpenCL.h</file>
+            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibCommon/TComDataCU.cpp</file>
             <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncSearch.cpp</file>
+            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibCommon/TComDataCU.h</file>
             <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibEncoder/TEncOpenCL.cpp</file>
-            <file>file:/home/augusto/Copy/NetBeansProjects/HM-OpenCL/source/Lib/TLibCommon/TComRdCost.h</file>
         </group>
     </open-files>
 </project-private>

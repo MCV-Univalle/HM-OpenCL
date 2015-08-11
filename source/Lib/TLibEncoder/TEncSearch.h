@@ -370,7 +370,7 @@ protected:
   // -------------------------------------------------------------------------------------------------------------------
   // motion estimation
   // -------------------------------------------------------------------------------------------------------------------
-
+  
   Void xMotionEstimation          ( TComDataCU*  pcCU,
                                     TComYuv*     pcYuvOrg,
                                     Int          iPartIdx,
@@ -380,7 +380,11 @@ protected:
                                     TComMv&      rcMv,
                                     UInt&        ruiBits,
                                     Distortion&  ruiCost,
-                                    Bool         bBi = false  );
+                                    TComMv       (*rcMvOpenCL)[33][NUM_CTU_PARTS],
+                                    Distortion   (*ruiCostOpenCL)[33][NUM_CTU_PARTS],
+                                    Bool         isOpenCL,
+                                    Bool         bBi = false
+                                    );
 
   Void xTZSearch                  ( TComDataCU*  pcCU,
                                     TComPattern* pcPatternKey,
@@ -465,40 +469,9 @@ protected:
                                    UInt          uiTrMode,
                                    UInt&         ruiBits);
   
-  // -------------------------------------------------------------------------------------------------------------------
-  // compute symbol bits
-  // -------------------------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------------------------------------------
-  // OpenCL Motion Estimation
-  // -------------------------------------------------------------------------------------------------------------------
-  
-  //calc motion estimation with OpenCL Added by: Augusto
-  Void  xMotionEstimationOpenCL(TComDataCU*     pcCTU,
-                                TComYuv*        pcYuvOrg, 
-                                Int             iPartIdx,
-                                RefPicList      eRefPicList,
-                                TComMv*         pcMvPred, 
-                                Int             iRefIdxPred,
-                                Int             iRefList,
-                                TComMv          (*rcMv)[33][NUM_CTU_PARTS],
-                                Distortion      (*ruiCost)[33][NUM_CTU_PARTS],
-                                Bool            bBi = false);
-  
-  // Calc fractional motion vectors Added By: Augusto
-  Void xFracDIFOpenCL(TComDataCU* pcCU, 
-                      TComYuv* pcYuvOrg, 
-                      Int iPartIdx, 
-                      RefPicList eRefPicList, 
-                      Int iRefIdxPred, 
-                      TComMv& rcMv, 
-                      UInt& ruiBits, 
-                      Distortion& ruiCost, 
-                      Bool bBi = false);
-  
-  // index to get Motion Vector and ruiCost calculated with OpenCl Added by: Augusto
+ // index to get Motion Vector and ruiCost calculated with OpenCl Added by: Augusto
   Int xGetIndexBlock(UChar Width, UChar Height, Int iPartIdx, UChar Depth, UInt zOrder, PartSize i_ePartSize);
   
-
   Void  setWpScalingDistParam( TComDataCU* pcCU, Int iRefIdx, RefPicList eRefPicListCur );
   inline  Void  setDistParamComp( ComponentID compIdx )  { m_cDistParam.compIdx = compIdx; }
 
