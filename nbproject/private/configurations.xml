@@ -321,8 +321,9 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM/cfg/per-sequence/BQMall.cfg</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall.cfg</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall-CL.cfg</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall.cfg</runcommand>
+        <runcommand>"${OUTPUT_PATH}" -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/encoder_randomaccess_main.cfg -c /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cfg/per-sequence/BQMall-CL.cfg</runcommand>
         <rundir>build/linux</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>

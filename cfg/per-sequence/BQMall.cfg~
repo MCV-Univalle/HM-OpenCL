@@ -8,9 +8,9 @@ SourceWidth                   : 832         # Input  frame width
 SourceHeight                  : 480         # Input  frame height
 FramesToBeEncoded             : 9     	    # Number of frames to be coded
 Level                         : 3.1
-OpenCL             	      : 0
+OpenCL             	      : 1
 OpenCLDevice		      : 0
 OutputBitDepth		      : 8
 InternalBitDepth	      : 8
-BitstreamFile		      : /home/augusto/Downloads/output2.hevc
+BitstreamFile		      : /home/augusto/Downloads/BQMall.hevc
 

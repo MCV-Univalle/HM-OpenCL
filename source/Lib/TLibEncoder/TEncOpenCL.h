@@ -42,6 +42,7 @@ protected:
     Int                     deviceId;               ///< Device Id
     Char*                   info;                   ///< Info of OpenCL Device
     const Char*             kernelSource;           ///< kernel Source Filename
+    Bool                    enabled;
    
 	
 // ====================================================================================================================
@@ -119,6 +120,7 @@ public:
     Void            setCTU              (Pel* pelCtu)   { pelCtuArray = pelCtu; }
     /* Lambda for calculate motion cost - Don't use cu_transquant_bypass */
     Void            setLambda           (Double lambda) { m_lambda =  (UInt)floor(65536.0 * sqrt(lambda)); }
+    Void            setEnabled          (Bool e)        { enabled = e; }
 
  
 protected:  

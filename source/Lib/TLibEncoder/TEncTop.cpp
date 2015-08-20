@@ -1132,7 +1132,10 @@ Void TEncTop::xInitOpenCL(Int OpenCLDevice)
         {
             printf("OpenCL Kernel Compiled\n");
             if(m_cOpenCLME.createBuffers(getMaxCUWidth(), getMaxCUHeight(), getSearchRange()))
+            {
                 printf("Buffers created\n");
+                m_cOpenCLME.setEnabled(true);
+            }
             else
                 printf("Create Buffers error\n");
         }

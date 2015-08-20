@@ -37,27 +37,30 @@ TEncOpenCL::TEncOpenCL() {
 
 TEncOpenCL::~TEncOpenCL() {
     
+    
     clFinish(queue);
     clReleaseContext(context);
     
-    errNum = clReleaseMemObject(pelCtuBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete Ctu Buffer");
-    
-    errNum = clReleaseMemObject(pelAreaBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete search area Buffer");
-    
-    errNum = clReleaseMemObject(sadBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete min sad Buffer");
-    
-    errNum = clReleaseMemObject(tempSadBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete temp sad Buffer");
-    
-    errNum = clReleaseMemObject(XarrayBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete x Buffer");
-    
-    errNum = clReleaseMemObject(YarrayBuffer);
-    checkError(errNum, "clReleaseMemObject - Delete y Buffer");
-    
+    if(enabled)
+    {
+        errNum = clReleaseMemObject(pelCtuBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete Ctu Buffer");
+
+        errNum = clReleaseMemObject(pelAreaBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete search area Buffer");
+
+        errNum = clReleaseMemObject(sadBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete min sad Buffer");
+
+        errNum = clReleaseMemObject(tempSadBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete temp sad Buffer");
+
+        errNum = clReleaseMemObject(XarrayBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete x Buffer");
+
+        errNum = clReleaseMemObject(YarrayBuffer);
+        checkError(errNum, "clReleaseMemObject - Delete y Buffer");
+    }
     Xarray = NULL;
     Yarray = NULL;
     minSad = NULL;
