@@ -3749,13 +3749,18 @@ Void TEncSearch::xMotionEstimation( TComDataCU* pcCU, TComYuv* pcYuvOrg, Int iPa
             m_ppcOpenCLME->calcMotionVectors(piCtu, piRefY, iRefStride, iCtuStride, iSrchRng ,&cMvSrchRngLT); //Send to Buffers Initial Position of CTU and Search Area
   
             // Get Motion Vectors and ruiCost
-            TComMv*     rcMvTemp      = m_ppcOpenCLME->getMotionVectors();
-            Distortion* ruiCostTemp   = m_ppcOpenCLME->getRuiCost();
+            Int* xTemp;
+            Int* yTemp;
+            Distortion* ruiCostTemp;
+             
+            xTemp        = m_ppcOpenCLME->getX();
+            yTemp        = m_ppcOpenCLME->getY();
+            ruiCostTemp     = m_ppcOpenCLME->getRuiCost();
             
             for(int i = 0; i< NUM_CTU_PARTS; i++)
             {
                 ruiCostOpenCL[eRefPicList][iRefIdxPred][i] = ruiCostTemp[i];
-                rcMvOpenCL[eRefPicList][iRefIdxPred][i].set(rcMvTemp[i].getHor(), rcMvTemp[i].getVer());
+                rcMvOpenCL[eRefPicList][iRefIdxPred][i].set((Short)xTemp[i], (Short)yTemp[i]);
             } 
       }
       

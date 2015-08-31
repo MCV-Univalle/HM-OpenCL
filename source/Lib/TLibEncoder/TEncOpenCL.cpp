@@ -274,10 +274,6 @@ Void TEncOpenCL::calcMotionVectors(Pel* pelCtu, Pel* pelSearch, Int i_iRefStride
     for(Int i = 0; i< areaStride; i++)
         for(Int j= 0; j < areaStride; j++)
             srchAreaPtr[j + (i * areaStride)] = pelSearchArray[j + (i * iRefStride)];
-      
-   /* for(Int i = 0; i< areaSize; i++)
-        for(Int j= 0; j < areaSize; j++)
-        printf("pel: %d\n", srchAreaPtr[j + (i * areaStride)]);*/
     
     errNum = clEnqueueUnmapMemObject(queue, pelAreaBuffer, srchAreaPtr, 0, NULL, NULL);
     checkError(errNum, "clEnqueueUnmapMemObject - pelAreaBuffer");   
@@ -362,18 +358,6 @@ Void TEncOpenCL::calcMotionVectors(Pel* pelCtu, Pel* pelSearch, Int i_iRefStride
     errNum = clEnqueueUnmapMemObject(queue, YarrayBuffer, Yarray, 0, NULL, NULL);
     checkError(errNum, "clEnqueueUnmapMemObject - YarrayBuffer");
     
-    /*for(Int i = 0; i< NUM_CTU_PARTS; i++)
-        printf("Sad[%d]: %d - x: %d - y:%d\n", i, ruiCosts[i], Xarray[i], Yarray[i]);
-    
-    std::cout << "Press enter to continue ..."; 
-    std::cin.get(); */
-   
-    //Set Motion Vector
-    for(Int i = 0; i<NUM_CTU_PARTS; i++)
-    {
-        motionVectors[i].setHor((Short)Xarray[i]);
-        motionVectors[i].setVer((Short)Yarray[i]);
-    }  
 }
 /*
  Function to fill Buffers with zeros and max values

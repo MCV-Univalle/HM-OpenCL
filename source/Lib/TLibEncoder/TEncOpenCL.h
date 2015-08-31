@@ -80,7 +80,6 @@ protected:
     Int*                    Yarray;                 ///< Pos X of minimun SAD blocks
     Distortion*             minSad;                 ///< Minimum SAD blocks
     Distortion*             ruiCosts;                ///< Rui Cost of Blocks
-    TComMv                  motionVectors[593];
     
     // ========= Values =========================
 
@@ -116,8 +115,8 @@ public:
     Void            setDeviceId         ( Int i )       { deviceId = i; }
     const Char*     getDeviceInfo       ()              { return info; }
     Distortion*     getRuiCost          ()              { return ruiCosts; }      
-    TComMv*         getMotionVectors    ()              { return motionVectors; }
-    Void            setCTU              (Pel* pelCtu)   { pelCtuArray = pelCtu; }
+    Int*            getX                ()              { return Xarray; }
+    Int*            getY                ()              { return Yarray; }
     /* Lambda for calculate motion cost - Don't use cu_transquant_bypass */
     Void            setLambda           (Double lambda) { m_lambda =  (UInt)floor(65536.0 * sqrt(lambda)); }
     Void            setEnabled          (Bool e)        { enabled = e; }
