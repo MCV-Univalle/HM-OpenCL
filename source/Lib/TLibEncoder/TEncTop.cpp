@@ -1116,7 +1116,7 @@ Void  TEncCfg::xCheckGSParameters()
 Void TEncTop::xInitOpenCL(Int OpenCLDevice)
 
 {
-    const Char* file = "/home/augusto/Copy/NetBeansProjects/HM-OpenCL/cl/sad.cl" ;
+    //const Char* file = getKernelOpenCL();
     const Char* kernelCalc; 
 
 #if AMP_ENC_SPEEDUP
@@ -1128,30 +1128,36 @@ Void TEncTop::xInitOpenCL(Int OpenCLDevice)
 
     if(m_cOpenCLME.findDevice(OpenCLDevice))
     {
-        if(m_cOpenCLME.compileKernelSource(file, kernelCalc))
+        if(getKernelOpenCL() == NULL)
         {
-            printf("OpenCL Kernel Compiled\n");
-            if(m_cOpenCLME.createBuffers(getMaxCUWidth(), getMaxCUHeight(), getSearchRange()))
-            {
-                printf("Buffers created\n");
-                m_cOpenCLME.setEnabled(true);
-            }
-            else
-                printf("Create Buffers error\n");
+            printf("Invalid OpenCL Kernel!!!! \n");
+            printf("OpenCL Motion Estimation Disabled");
+            setOpenCL( false ) ;            
         }
         else
         {
-            printf("Failed Compiled Kernel\n");
-            printf("OpenCL                          : Disabled \n");
-            setOpenCL( false ) ;
-            exit(0); 
+            if(m_cOpenCLME.compileKernelSource(getKernelOpenCL(), kernelCalc))
+            {
+                printf("OpenCL Kernel Compiled\n");
+                if(m_cOpenCLME.createBuffers(getMaxCUWidth(), getMaxCUHeight(), getSearchRange()))
+                {
+                    printf("Buffers created\n");
+                    m_cOpenCLME.setEnabled(true);
+                }
+                else
+                {
+                    printf("Create Buffers error!!!\n");
+                    printf("OpenCL Motion Estimation Disabled\n");
+                    setOpenCL( false ) ;
+                }
+            }
+            else
+            {
+                printf("Failed Compiled Kernel\n");
+                printf("OpenCL Motion Estimation Disabled\n");
+                setOpenCL( false ) ;
+            }
         }
     }
-    else
-    {
-        printf("OpenCL                          : Disabled \n");
-        setOpenCL( false ) ;
-    }
-   
 }
 //! \}

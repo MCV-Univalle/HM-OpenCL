@@ -58,6 +58,7 @@ protected:
   // OpenCL
   Bool      m_pcOpenCL;                                       ///< enable OpenCL
   Int       m_pcOpenCLDevice;                                 ///< ID OpenCL device  
+  Char*     m_pchKernelOpenCL;                                 ///< kernel OpenCL path  
     
   // file I/O
   Char*     m_pchInputFile;                                   ///< source file name

@@ -99,13 +99,15 @@ enum ExtendedProfileName // this is used for determining profile strings, where 
 // ====================================================================================================================
 
 TAppEncCfg::TAppEncCfg()
-: m_pchInputFile()
+: m_pchKernelOpenCL()
+, m_pchInputFile()
 , m_pchBitstreamFile()
 , m_pchReconFile()
 , m_inputColourSpaceConvert(IPCOLOURSPACE_UNCHANGED)
 , m_snrInternalColourSpace(false)
 , m_outputInternalColourSpace(false)
 , m_pchdQPFile()
+
 , m_scalingListFile()
 {
   m_aidQP = NULL;
@@ -141,6 +143,7 @@ TAppEncCfg::~TAppEncCfg()
   free(m_pchReconFile);
   free(m_pchdQPFile);
   free(m_scalingListFile);
+  free(m_pchKernelOpenCL);
 }
 
 Void TAppEncCfg::create()
@@ -645,6 +648,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   string cfg_ReconFile;
   string cfg_dQPFile;
   string cfg_ScalingListFile;
+  string cfg_KernelFile;
 
   Int tmpChromaFormat;
   Int tmpInputChromaFormat;
@@ -1044,6 +1048,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   ("SEIMasteringDisplayWhitePoint",                   cfg_DisplayWhitePointCode,     cfg_DisplayWhitePointCode, "Mastering display white point CIE xy coordinates in normalised increments of 1/50000 (e.g. 0.333 = 16667)")
   ("OpenCL",                                          m_pcOpenCL,                                        false, "OpenCL Motion Estimation")    
   ("OpenCLDevice",                                    m_pcOpenCLDevice,                                      0, "ID OpenCL Motion estimation Device")
+  ("KernelOpenCL",                                    cfg_KernelFile,                            string(""), "OpenCL kernel path")
   ;
 
   for(Int i=1; i<MAX_GOP+1; i++)
@@ -1082,6 +1087,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
    */
   /* convert std::string to c string for compatability */
   m_pchInputFile = cfg_InputFile.empty() ? NULL : strdup(cfg_InputFile.c_str());
+  m_pchKernelOpenCL = cfg_KernelFile.empty() ? NULL : strdup(cfg_KernelFile.c_str());
   m_pchBitstreamFile = cfg_BitstreamFile.empty() ? NULL : strdup(cfg_BitstreamFile.c_str());
   m_pchReconFile = cfg_ReconFile.empty() ? NULL : strdup(cfg_ReconFile.c_str());
   m_pchdQPFile = cfg_dQPFile.empty() ? NULL : strdup(cfg_dQPFile.c_str());
@@ -2333,6 +2339,7 @@ Void TAppEncCfg::xPrintParameter()
   printf("Max dQP signaling depth           : %d\n", m_iMaxCuDQPDepth);
   printf("OpenCL                            : %d\n", m_pcOpenCL);
   printf("OpenCLDevice                      : %d\n", m_pcOpenCLDevice);
+  printf("kernelOpenCL                      : %s\n", m_pchKernelOpenCL);
 
   printf("Cb QP Offset                      : %d\n", m_cbQpOffset   );
   printf("Cr QP Offset                      : %d\n", m_crQpOffset);

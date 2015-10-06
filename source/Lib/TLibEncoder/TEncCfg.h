@@ -242,6 +242,7 @@ protected:
   std::vector<Int> m_tileRowHeight;
   Bool      m_OpenCL;
   Int       m_OpenCLDevice;
+  Char*     m_kernelOpenCL;
   
   Int       m_iWaveFrontSynchro;
 
@@ -458,6 +459,8 @@ public:
   Bool      getOpenCL                       ()               { return m_OpenCL; }
   Void      setOpenCLDevice                 ( Int   i )      { m_OpenCLDevice = i; }
   Int       getOpenCLDevice                 ()               { return m_OpenCLDevice; }
+  Void      setKernelOpenCL                 ( Char* kch )      { m_kernelOpenCL = kch; }
+  Char*     getKernelOpenCL                 ()               { return m_kernelOpenCL; }
 
   //====== Quality control ========
   Void      setMaxDeltaQP                   ( Int   i )      { m_iMaxDeltaQP = i; }

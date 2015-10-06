@@ -96,6 +96,8 @@ Void TAppEncTop::xInitLibCfg()
   
   m_cTEncTop.setOpenCL                                            ( m_pcOpenCL );
   m_cTEncTop.setOpenCLDevice                                      ( m_pcOpenCLDevice);
+  m_cTEncTop.setKernelOpenCL                                      ( m_pchKernelOpenCL);
+
 
   m_cTEncTop.setPrintMSEBasedSequencePSNR                         ( m_printMSEBasedSequencePSNR);
   m_cTEncTop.setPrintFrameMSE                                     ( m_printFrameMSE);

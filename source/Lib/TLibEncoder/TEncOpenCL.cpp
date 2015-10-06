@@ -140,13 +140,14 @@ Bool TEncOpenCL::compileKernelSource(const Char* fileName, const Char* kernelNam
 {
     
     compileKernel = true;  
-	
-    
+	    
     //read external kernel
     std::ifstream srcFile(fileName);    
 
-    compileKernel = checkError(srcFile.is_open() ? CL_SUCCESS : -1, "Reading Kernel\n"); 
-
+    if(!checkError(srcFile.is_open() ? CL_SUCCESS : -1, "Reading Kernel\n"))
+        return  false;
+        
+    
     //create string with external kernel
     std::string srcProg(std::istreambuf_iterator<char>(srcFile),(std::istreambuf_iterator<char>()));
 

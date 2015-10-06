@@ -9,7 +9,8 @@ SourceHeight                  : 480         # Input  frame height
 FramesToBeEncoded             : 9     	    # Number of frames to be coded
 Level                         : 3.1
 OpenCL             	      : 1
-OpenCLDevice		      : 0
+OpenCLDevice	 	      : 0
+KernelOpenCL	              : /home/augusto/Copy/NetBeansProjects/HM-OpenCL/cl/sad.cl
 OutputBitDepth		      : 8
 InternalBitDepth	      : 8
 BitstreamFile		      : /home/augusto/Downloads/BQMall.hevc
