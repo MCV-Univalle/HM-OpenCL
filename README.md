@@ -18,8 +18,13 @@ HEVC Test Model version 16.4 with a module for performing the Motion Estimation 
 
 <h2>Modifications</h2>
 <ul>
-  <li><b>EncTop class:</b> function for calling the OpenCL methods was added. Based of system verification show a activation of OpenCL </li>
-  <li><b></li>
+  <li><b>EncTop class:</b> function for calling the OpenCL methods was added. Based of system verification show a activation of OpenCL message </li>
+  <li><b>TAppEncCfg class:</b> Options OpenCL, OpenCLDevice and  KernelOpenCL was added in the class in order to configuration file recognize them</li>
+  <li><b>TEncSearch class:</b> two 3d-array was added:</li>
+    <ul>
+      <li>TComMv allMotionVectors[2][33][NUM_CTU_PARTS]</li>
+      <li> Distortion allRuiCost[2][33][NUM_CTU_PARTS]</li>
+    </ul>
 </ul>
 <h2>Configuration</h2>
 For motion estimation with OpenCL is necessary to add to configuration file the following parameters:  <br>
