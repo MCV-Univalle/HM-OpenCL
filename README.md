@@ -14,6 +14,7 @@ HEVC Test Model version 16.4 with a module for performing the Motion Estimation 
   <li><b>TEncOpenCL::findDevices method:</b>verify that the system meets the conditions for running OpenCL (search OpenCL platform and search OpenCL device)</li>
   <li><b>TEncOpenCL::compileKernelSource method:</b> initialize the OpenCL variables. Moreover read and compile the OpenCl kernel</li>
   <li><b>TEncOpenCL::calcMotionVectors method:</b> Load the pixels of CTU and search area into the input buffers,  calculate the sum of absolute differences for one CTU and store the information into temporal buffers for the calculus of motion vectors and rate-distortion cost</li>
+  <li><b>sad.cl file:</b> Kernel source code for Sum of Absolute differences calculation. This file was included in cl/ path</li>
 </ul>
 
 <h2>Modifications</h2>
