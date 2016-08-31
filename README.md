@@ -25,6 +25,8 @@ HEVC Test Model version 16.4 with a module for performing the Motion Estimation 
       <li>TComMv allMotionVectors[2][33][NUM_CTU_PARTS]</li>
       <li> Distortion allRuiCost[2][33][NUM_CTU_PARTS]</li>
     </ul>
+  <li><b>TComDataCU class:</b> The method getIndexBlock was created for mapping the CU index with motion vectors and distortion cost 3D-arrays</li>
+  <li><b>TEncSearch::xMotionEstimation Method:</b> a condicitonal was added in order to select either motion estimation is performed for the GPU or performed in CPU (no parallel)</li>
 </ul>
 <h2>Configuration</h2>
 For motion estimation with OpenCL is necessary to add to configuration file the following parameters:  <br>
@@ -36,5 +38,3 @@ For motion estimation with OpenCL is necessary to add to configuration file the 
 
 For more information of HEVC Test Model can to visit the next link:<br>
 <a>https://hevc.hhi.fraunhofer.de/</a>
-
-
